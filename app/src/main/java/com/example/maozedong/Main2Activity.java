@@ -7,14 +7,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
+public class Main2Activity extends AppCompatActivity {
 
     private Button button_elso;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main2);
 
         init();
 
@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                Intent masodik_activity = new Intent(MainActivity.this,Main2Activity.class);
+                Intent masodik_activity = new Intent(Main2Activity.this,MainActivity.class);
                 startActivity(masodik_activity);
                 finish();
             }
